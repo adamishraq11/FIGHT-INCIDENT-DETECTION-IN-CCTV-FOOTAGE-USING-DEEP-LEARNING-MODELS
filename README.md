@@ -79,21 +79,22 @@ A 100% recall means the model detected every fight incident in the test set with
 
 1. **Extract the project files**
    Extract `source code.zip` to a location on your computer (e.g. Desktop or Downloads).
+   Source code.zip is in Releases section v.1.0 (FYP source code cleaned.zip).
 
-2. **Open Command Prompt inside the `dashboard` folder**
+3. **Open Command Prompt inside the `dashboard` folder**
    - Open the extracted `source code` folder, then open the `dashboard` folder inside it.
    - Click the address bar at the top of File Explorer.
    - Clear the path text, type `cmd`, and press Enter.
    - A Command Prompt window will open directly in the `dashboard` folder.
 
-3. **Install dependencies**
+4. **Install dependencies**
    Run the following command:
    ```bash
    pip install flask werkzeug opencv-python torch torchvision onnxruntime numpy ultralytics
    ```
    *This may take a few minutes depending on your internet speed.*
 
-4. **Start the server**
+5. **Start the server**
    ```bash
    python app.py
    ```
@@ -103,7 +104,7 @@ A 100% recall means the model detected every fight incident in the test set with
    ```
    Wait until you see: `Running on http://127.0.0.1:5000`
 
-5. **Open the dashboard**
+6. **Open the dashboard**
    Open your browser (Chrome / Edge / Firefox) and go to:
    ```
    http://127.0.0.1:5000
