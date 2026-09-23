@@ -129,4 +129,4 @@ Special thanks to my supervisor, **Assoc. Prof. Ts. Dr. Nor Samsiah Sani**, for 
 
 ##  License
 
-This project was developed for academic purposes as part of a Final Year Project at UKM.
+This project was developed for academic purposes as part of a Final Year Project at FTSM, UKM.
