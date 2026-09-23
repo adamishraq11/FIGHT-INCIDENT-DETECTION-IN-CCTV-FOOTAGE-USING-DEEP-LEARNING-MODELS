@@ -1,4 +1,4 @@
-# 🚨 FIGHT INCIDENT DETECTION IN CCTV FOOTAGE USING DEEP LEARNING MODELS
+#  FIGHT INCIDENT DETECTION IN CCTV FOOTAGE USING DEEP LEARNING MODELS
 
 A real-time fight/violence detection system for CCTV footage, powered by a hybrid deep learning pipeline (**YOLOv8-Pose + EfficientNetB0 + LSTM**) and served through a Flask web dashboard.
 
@@ -7,7 +7,7 @@ Supervisor: Assoc. Prof. Ts. Dr. Nor Samsiah Sani
 
 ---
 
-## 📌 Overview
+##  Overview
 
 Manual CCTV monitoring is limited by human attention span — operator focus typically drops after just 8–10 minutes of continuous viewing, causing violent incidents to go undetected. This system automates that detection by combining:
 
@@ -17,15 +17,15 @@ Manual CCTV monitoring is limited by human attention span — operator focus typ
 
 When a fight is detected, the system displays a red bounding box with a confidence score on the video feed and logs the event in real time on the dashboard.
 
-## ✨ Features
+##  Features
 
-- 🎥 Upload and analyze CCTV video footage frame-by-frame
-- 🟥 Real-time bounding box + confidence score overlay on detected individuals
-- 📋 Live activity log with timestamps
-- 🌙 Dark mode dashboard UI
-- ⚠️ Robust error handling (unsupported formats, corrupted files, oversized uploads)
+-  Upload and analyze CCTV video footage frame-by-frame
+-  Real-time bounding box + confidence score overlay on detected individuals
+-  Live activity log with timestamps
+-  Dark mode dashboard UI
+-  Robust error handling (unsupported formats, corrupted files, oversized uploads)
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 CCTV Video → YOLOv8-Pose (keypoints) → EfficientNetB0 (spatial features) → LSTM (temporal modelling) → Fight / Normal Classification → Flask Dashboard
@@ -50,21 +50,17 @@ After hyperparameter tuning with **Optuna** (Tree-structured Parzen Estimator + 
 
 A 100% recall means the model detected every fight incident in the test set with zero false negatives — critical for a security-alerting system.
 
-## 📊 Dataset
+##  Dataset
 
 - 500 videos total (250 fight, 250 normal), sourced from the **Surveillance Fight Dataset** and **Peliculas Dataset**
 - Split 80:10:10 (train/val/test) using Video-Grouped Splitting to prevent data leakage
 - Person tracking across frames handled by **ByteTrack**
 
-## ✅ Testing & Validation
+##  Testing & Validation
 
 - **Black-box testing**: 6/6 functional scenarios passed (normal video, fight video, unsupported file formats, corrupted files, empty submission, oversized files)
 - **User Acceptance Test (UAT)**: 13 respondents (security guards, security management, technical staff) — every evaluation item scored above 4.0/5.0 on a 5-point Likert scale
-
-## 🖼️ Screenshots
-
-<!-- Add your dashboard screenshot / demo GIF here, e.g.: -->
-<!-- ![Dashboard detecting a fight](assets/demo.gif) -->
+  
 
 ## 🛠️ Tech Stack
 
@@ -74,12 +70,12 @@ A 100% recall means the model detected every fight incident in the test set with
 - **Computer Vision**: OpenCV
 - **Hyperparameter Tuning**: Optuna
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Python 3.8 or newer
 - Internet connection (for installing dependencies on first run)
 
-## 🚀 Installation & Usage (Windows)
+##  Installation & Usage (Windows)
 
 1. **Extract the project files**
    Extract `source code.zip` to a location on your computer (e.g. Desktop or Downloads).
@@ -113,7 +109,7 @@ A 100% recall means the model detected every fight incident in the test set with
    http://127.0.0.1:5000
    ```
 
-## 🎬 Testing the System
+##  Testing the System
 
 Sample test videos are included in the `test video` folder:
 - `cctv1.mp4` — Normal activity
@@ -121,16 +117,16 @@ Sample test videos are included in the `test video` folder:
 
 Upload either video via the **"Pilih Fail Video"** (Choose Video File) button on the dashboard to see the system in action.
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Live RTSP/WebRTC streaming support for real-time detection (currently offline video analysis only)
 - Edge deployment on embedded hardware (NVIDIA Jetson Nano, Raspberry Pi)
 - Expand detection scope to other crime categories (theft, vandalism)
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 Special thanks to my supervisor, **Assoc. Prof. Ts. Dr. Nor Samsiah Sani**, for her guidance throughout this project.
 
-## 📄 License
+##  License
 
 This project was developed for academic purposes as part of a Final Year Project at UKM.
