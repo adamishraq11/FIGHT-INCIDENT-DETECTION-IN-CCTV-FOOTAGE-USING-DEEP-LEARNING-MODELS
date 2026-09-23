@@ -1,4 +1,4 @@
-# 🚨 CCTV Fight Detection System
+# 🚨 FIGHT INCIDENT DETECTION IN CCTV FOOTAGE USING DEEP LEARNING MODELS
 
 A real-time fight/violence detection system for CCTV footage, powered by a hybrid deep learning pipeline (**YOLOv8-Pose + EfficientNetB0 + LSTM**) and served through a Flask web dashboard.
 
